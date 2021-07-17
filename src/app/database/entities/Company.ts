@@ -1,8 +1,8 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity("companies")
-export class Company {
-  @PrimaryGeneratedColumn("uuid")
+@Entity('companies')
+export default class Company {
+  @PrimaryGeneratedColumn('uuid')
   id!: string;
 
   @Column({ length: 50 })
